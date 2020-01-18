@@ -20,7 +20,7 @@ $( () => {
      * @param {movie, series or episode} type - type of the film
      */
     let request = function(title, page, type) {
-        let  API = `http://www.omdbapi.com/?apikey=493a10d1&s=${title}&page=${page}&type=${type}`;
+        let  API = `https://www.omdbapi.com/?apikey=493a10d1&s=${title}&page=${page}&type=${type}`;
         fetch(API)
             .then(response => {
                 return response.json();

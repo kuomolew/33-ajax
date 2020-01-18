@@ -16,7 +16,7 @@ $( () => {
 });
 
 let request = function(imdbID) {
-    let  API = `http://www.omdbapi.com/?apikey=493a10d1&i=${imdbID}&plot=full`;
+    let  API = `https://www.omdbapi.com/?apikey=493a10d1&i=${imdbID}&plot=full`;
     fetch(API)
         .then(response => {
             return response.json();
